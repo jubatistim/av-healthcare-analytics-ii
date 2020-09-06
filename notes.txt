@@ -1,0 +1,13 @@
+py -3.7 -m venv venv37
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+venv37/Scripts/Activate.ps1
+clear
+
+
+pip install -r requirements.txt
+
+
+pip install ipykernel
+
+ipython kernel install --user --name=venv37
